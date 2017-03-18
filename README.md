@@ -13,7 +13,6 @@ Register pacman repository
 
 Build and add package to repository
 -----------------------------------
-Normally you need not to do this.
 Just use pacman repository.
 
 ### Set up
@@ -22,11 +21,13 @@ Just use pacman repository.
     $ cd pacman-repo
     $ git submodule init
     $ git submodule update
-
+    
 
 ### Build and add package
-
     $ cd pacman-repo
+    $ cd pkgbuild
+    $ yarout -G <package name>
+    $ cd ..
     $ ./add_package_to_repository.pl some_package_in_pkgbuilds
 
 
