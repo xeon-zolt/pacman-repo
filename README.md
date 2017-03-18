@@ -6,8 +6,8 @@ Register pacman repository
 
     # cat >> /etc/pacman.conf
     
-    [yujinakayama]
-    Server = https://raw.github.com/yujinakayama/pacman-repo/master/repo/$arch
+    [Event-Linux]
+    Server = https://raw.github.com/xeon-zolt/pacman-repo/master/repo/$arch
     # pacman -Sy
 
 
@@ -18,7 +18,7 @@ Just use pacman repository.
 
 ### Set up
 
-    $ git clone git@github.com:yujinakayama/pacman-repo.git
+    $ git clone git@github.com:xeon-zolt/pacman-repo.git
     $ cd pacman-repo
     $ git submodule init
     $ git submodule update
